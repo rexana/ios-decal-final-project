@@ -1,0 +1,6 @@
+framework module Pods_iOSDecalAppPrototype {
+  umbrella header "Pods-iOSDecalAppPrototype-umbrella.h"
+
+  export *
+  module * { export * }
+}
