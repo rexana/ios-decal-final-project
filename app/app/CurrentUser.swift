@@ -12,14 +12,15 @@ import FirebaseAuth
 class CurrentUser {
     
     var username: String!
+    var phoneNumber: String!
     var id: String!
-    var readPostIDs: [String]?
     
     let dbRef = FIRDatabase.database().reference()
     
     init() {
         let currentUser = FIRAuth.auth()?.currentUser
         username = currentUser?.displayName
+        phoneNumber = currentUser?.phoneNumber
         id = currentUser?.uid
     }
     

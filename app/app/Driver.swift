@@ -13,12 +13,10 @@ class Driver: NSObject, MKAnnotation {
     let title: String?
     var subtitle: String?
     let coordinate: CLLocationCoordinate2D
-    let image: UIImage
     
-    init(title: String, coordinate: CLLocationCoordinate2D, image: UIImage) {
+    init(title: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.coordinate = coordinate
-        self.image = image
         
         super.init()
     }

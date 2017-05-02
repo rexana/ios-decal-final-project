@@ -1,23 +1,19 @@
 //
-//  ProfileViewController.swift
-//  app
+//  SleekCardViewController.swift
+//  BusinessCardApp
 //
-//  Created by Rexana Church on 4/28/17.
+//  Created by Rexana Church on 4/30/17.
 //  Copyright © 2017 Rexana Church. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-    
-//    var driver = Driver()
-    @IBOutlet weak var driverName: UILabel!
-    @IBOutlet weak var driverAvailability: UILabel!
-    
+class SleekCardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,8 +21,6 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func sendMessageButtonWasPressed(_ sender: UIButton) {
-    }
 
     /*
     // MARK: - Navigation
