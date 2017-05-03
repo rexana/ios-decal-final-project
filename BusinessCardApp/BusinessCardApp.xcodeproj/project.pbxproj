@@ -427,6 +427,7 @@
 				187EA43E1EB66D300005C4FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		187EA43F1EB66D300005C4FD /* Build configuration list for PBXNativeTarget "BusinessCardAppTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +436,7 @@
 				187EA4411EB66D300005C4FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -22,15 +22,17 @@ class ClassicCardViewController: UIViewController {
     var phoneString: String?
     var emailString: String?
     var websiteString: String?
+    
+    var activityViewController: UIActivityViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameLabel.text = nameString
-        titleLabel.text = titleString
-        phoneLabel.text = phoneString
-        emailLabel.text = emailString
-        websiteLabel.text = websiteString
+//        nameLabel.text = nameString
+//        titleLabel.text = titleString
+//        phoneLabel.text = phoneString
+//        emailLabel.text = emailString
+//        websiteLabel.text = websiteString
         
         var image = textToImage(drawText: nameString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 17)!, inImage: #imageLiteral(resourceName: "classic_bkgd"), atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6))
         
@@ -88,4 +90,12 @@ class ClassicCardViewController: UIViewController {
         
     }
 
+    @IBAction func shareButtonWasPressed(_ sender: UIButton) {
+        let activityViewController = UIActivityViewController(
+            activityItems: [backgroundImage.image!],
+            applicationActivities: nil)
+        
+        present(activityViewController, animated: true, completion: nil)
+
+    }
 }
