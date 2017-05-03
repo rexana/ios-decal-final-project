@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		187EA4231EB66D300005C4FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4221EB66D300005C4FD /* AppDelegate.swift */; };
-		187EA4251EB66D300005C4FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4241EB66D300005C4FD /* ViewController.swift */; };
+		187EA4251EB66D300005C4FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4241EB66D300005C4FD /* MainViewController.swift */; };
 		187EA4281EB66D300005C4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187EA4261EB66D300005C4FD /* Main.storyboard */; };
 		187EA42A1EB66D300005C4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187EA4291EB66D300005C4FD /* Assets.xcassets */; };
 		187EA42D1EB66D300005C4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187EA42B1EB66D300005C4FD /* LaunchScreen.storyboard */; };
 		187EA4381EB66D300005C4FD /* BusinessCardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4371EB66D300005C4FD /* BusinessCardAppTests.swift */; };
+		187EA4431EB686F70005C4FD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4421EB686F70005C4FD /* TableViewController.swift */; };
+		187EA4451EB687140005C4FD /* ClassicCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4441EB687140005C4FD /* ClassicCardViewController.swift */; };
+		187EA4471EB687230005C4FD /* SleekCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4461EB687230005C4FD /* SleekCardViewController.swift */; };
+		187EA4491EB687390005C4FD /* ColorfulCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA4481EB687390005C4FD /* ColorfulCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,7 @@
 /* Begin PBXFileReference section */
 		187EA41F1EB66D300005C4FD /* BusinessCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EA4221EB66D300005C4FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		187EA4241EB66D300005C4FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		187EA4241EB66D300005C4FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		187EA4271EB66D300005C4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187EA4291EB66D300005C4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187EA42C1EB66D300005C4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		187EA4331EB66D300005C4FD /* BusinessCardAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessCardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EA4371EB66D300005C4FD /* BusinessCardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardAppTests.swift; sourceTree = "<group>"; };
 		187EA4391EB66D300005C4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187EA4421EB686F70005C4FD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		187EA4441EB687140005C4FD /* ClassicCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicCardViewController.swift; sourceTree = "<group>"; };
+		187EA4461EB687230005C4FD /* SleekCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleekCardViewController.swift; sourceTree = "<group>"; };
+		187EA4481EB687390005C4FD /* ColorfulCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorfulCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				187EA4221EB66D300005C4FD /* AppDelegate.swift */,
-				187EA4241EB66D300005C4FD /* ViewController.swift */,
+				187EA4241EB66D300005C4FD /* MainViewController.swift */,
 				187EA4261EB66D300005C4FD /* Main.storyboard */,
 				187EA4291EB66D300005C4FD /* Assets.xcassets */,
 				187EA42B1EB66D300005C4FD /* LaunchScreen.storyboard */,
 				187EA42E1EB66D300005C4FD /* Info.plist */,
+				187EA4421EB686F70005C4FD /* TableViewController.swift */,
+				187EA4441EB687140005C4FD /* ClassicCardViewController.swift */,
+				187EA4461EB687230005C4FD /* SleekCardViewController.swift */,
+				187EA4481EB687390005C4FD /* ColorfulCardViewController.swift */,
 			);
 			path = BusinessCardApp;
 			sourceTree = "<group>";
@@ -146,6 +158,7 @@
 				TargetAttributes = {
 					187EA41E1EB66D300005C4FD = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = QXM2EMBAXA;
 						ProvisioningStyle = Automatic;
 					};
 					187EA4321EB66D300005C4FD = {
@@ -199,7 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187EA4251EB66D300005C4FD /* ViewController.swift in Sources */,
+				187EA4491EB687390005C4FD /* ColorfulCardViewController.swift in Sources */,
+				187EA4251EB66D300005C4FD /* MainViewController.swift in Sources */,
+				187EA4451EB687140005C4FD /* ClassicCardViewController.swift in Sources */,
+				187EA4431EB686F70005C4FD /* TableViewController.swift in Sources */,
+				187EA4471EB687230005C4FD /* SleekCardViewController.swift in Sources */,
 				187EA4231EB66D300005C4FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QXM2EMBAXA;
 				INFOPLIST_FILE = BusinessCardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rexanachurch.BusinessCardApp;
@@ -353,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QXM2EMBAXA;
 				INFOPLIST_FILE = BusinessCardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rexanachurch.BusinessCardApp;

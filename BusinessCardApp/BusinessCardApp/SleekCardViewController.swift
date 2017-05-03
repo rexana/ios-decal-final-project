@@ -9,11 +9,33 @@
 import UIKit
 
 class SleekCardViewController: UIViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var websiteLabel: UILabel!
+
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    var nameString: String?
+    var titleString: String?
+    var phoneString: String?
+    var emailString: String?
+    var websiteString: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backgroundImage.layer.borderColor = UIColor.gray.cgColor
+        backgroundImage.layer.borderWidth = 1
+        
+        nameLabel.text = nameString
+        titleLabel.text = titleString
+        phoneLabel.text = phoneString
+        emailLabel.text = emailString
+        websiteLabel.text = websiteString
+    
     }
 
     override func didReceiveMemoryWarning() {
