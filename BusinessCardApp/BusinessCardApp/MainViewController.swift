@@ -18,7 +18,26 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        nameField.autocapitalizationType = .words
+        titleField.autocapitalizationType = .sentences
+        phoneField.keyboardType = .phonePad
+        emailField.keyboardType = .emailAddress
+        websiteField.keyboardType = .URL
+        
+        //Looks for single or multiple taps.
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    // Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,13 +57,12 @@ class MainViewController: UIViewController {
         tableViewController.phoneString = phoneField.text!
         tableViewController.emailString = emailField.text!
         tableViewController.websiteString = websiteField.text!
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         
-//        let tableViewController = storyboard?.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
-//        tableViewController.nameString = nameField.text!
-//        tableViewController.titleString = titleField.text!
-//        tableViewController.phoneString = phoneField.text!
-//        tableViewController.emailString = emailField.text!
-//        tableViewController.websiteString = websiteField.text!
+        return true
     }
 
 }
