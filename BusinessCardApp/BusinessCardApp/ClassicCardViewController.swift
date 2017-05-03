@@ -31,16 +31,16 @@ class ClassicCardViewController: UIViewController {
         phoneLabel.text = phoneString
         emailLabel.text = emailString
         websiteLabel.text = websiteString
-//        
-//        var image = textToImage(drawText: nameString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 17)!, inImage: #imageLiteral(resourceName: "classic_bkgd"), atPoint: CGPoint(x: (backgroundImage.image?.size.width)!/2.5, y: (backgroundImage.image?.size.height)!/6))
-//        
-//        image = textToImage(drawText: titleString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: (backgroundImage.image?.size.width)!/2.5, y: (backgroundImage.image?.size.height)!/6 + 20))
-//
-//        image = textToImage(drawText: phoneString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: (backgroundImage.image?.size.width)!/2.5, y: (backgroundImage.image?.size.height)!/6 + 20))
-//
-//        image = textToImage(drawText: emailString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: (backgroundImage.image?.size.width)!/2.5, y: (backgroundImage.image?.size.height)!/6 + 20))
-//
-//        image = textToImage(drawText: websiteString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: (backgroundImage.image?.size.width)!/2.5, y: (backgroundImage.image?.size.height)!/6 + 20))
+        
+        var image = textToImage(drawText: nameString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 17)!, inImage: #imageLiteral(resourceName: "classic_bkgd"), atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6))
+        
+        image = textToImage(drawText: titleString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 20))
+
+        image = textToImage(drawText: phoneString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 40))
+
+        image = textToImage(drawText: emailString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 60))
+
+        image = textToImage(drawText: websiteString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 80))
         backgroundImage.image = image
         
     }
@@ -55,6 +55,8 @@ class ClassicCardViewController: UIViewController {
         
         // Setup the font specific variables
         let textColor = UIColor.black
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
 
         // Setup the image context using the passed image
         let scale = UIScreen.main.scale
@@ -63,7 +65,8 @@ class ClassicCardViewController: UIViewController {
         // Setup the font attributes that will be later used to dictate how the text should be drawn
         let textFontAttributes = [
             NSFontAttributeName: font,
-            NSForegroundColorAttributeName: textColor]
+            NSForegroundColorAttributeName: textColor,
+            NSParagraphStyleAttributeName: paragraphStyle]
 
         // Put the image into a rectangle as large as the original image
         image.draw(in: CGRect(origin: CGPoint.zero, size: image.size))
