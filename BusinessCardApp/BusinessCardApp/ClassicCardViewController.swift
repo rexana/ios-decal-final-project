@@ -11,11 +11,11 @@ import UIKit
 class ClassicCardViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var websiteLabel: UILabel!
+//    @IBOutlet weak var nameLabel: UILabel!
+//    @IBOutlet weak var titleLabel: UILabel!
+//    @IBOutlet weak var phoneLabel: UILabel!
+//    @IBOutlet weak var emailLabel: UILabel!
+//    @IBOutlet weak var websiteLabel: UILabel!
     
     var nameString: String?
     var titleString: String?
@@ -36,13 +36,13 @@ class ClassicCardViewController: UIViewController {
         
         var image = textToImage(drawText: nameString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 17)!, inImage: #imageLiteral(resourceName: "classic_bkgd"), atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6))
         
-        image = textToImage(drawText: titleString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 20))
+        image = textToImage(drawText: titleString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 25))
 
         image = textToImage(drawText: phoneString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 40))
 
-        image = textToImage(drawText: emailString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 60))
+        image = textToImage(drawText: emailString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 55))
 
-        image = textToImage(drawText: websiteString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 80))
+        image = textToImage(drawText: websiteString! as NSString, textFont: UIFont(name: "Hoefler Text", size: 12)!, inImage: image, atPoint: CGPoint(x: 0, y: (backgroundImage.image?.size.height)!/6 + 70))
         backgroundImage.image = image
         
     }
@@ -90,7 +90,7 @@ class ClassicCardViewController: UIViewController {
         
     }
 
-    @IBAction func shareButtonWasPressed(_ sender: UIButton) {
+    @IBAction func saveButtonWasPressed(_ sender: UIButton) {
         let activityViewController = UIActivityViewController(
             activityItems: [backgroundImage.image!],
             applicationActivities: nil)

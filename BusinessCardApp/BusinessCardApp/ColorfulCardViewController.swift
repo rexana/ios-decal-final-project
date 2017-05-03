@@ -87,7 +87,7 @@ class ColorfulCardViewController: UIViewController {
     }
 
 
-    @IBAction func shareButtonWasPressed(_ sender: UIButton) {
+    @IBAction func saveButtonWasPressed(_ sender: UIButton) {
         let activityViewController = UIActivityViewController(
             activityItems: [backgroundImage.image!],
             applicationActivities: nil)

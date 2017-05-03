@@ -65,46 +65,5 @@ class TableViewController: UIViewController {
             colorfulCardViewController.websiteString = websiteString
         }
         
-//        let classicCardViewController = storyboard?.instantiateViewController(withIdentifier: "ClassicCardViewController") as! ClassicCardViewController
-//        classicCardViewController.nameString = nameString
-//        classicCardViewController.titleString = titleString
-//        classicCardViewController.phoneString = phoneString
-//        classicCardViewController.emailString = emailString
-//        classicCardViewController.websiteString = websiteString
-//        
-//        let sleekCardViewController = storyboard?.instantiateViewController(withIdentifier: "SleekCardViewController") as! SleekCardViewController
-//        sleekCardViewController.nameString = nameString
-//        sleekCardViewController.titleString = titleString
-//        sleekCardViewController.phoneString = phoneString
-//        sleekCardViewController.emailString = emailString
-//        sleekCardViewController.websiteString = websiteString
-//        
-//        let colorfulCardViewController = storyboard?.instantiateViewController(withIdentifier: "ColorfulCardViewController") as! ColorfulCardViewController
-//        colorfulCardViewController.nameString = nameString
-//        colorfulCardViewController.titleString = titleString
-//        colorfulCardViewController.phoneString = phoneString
-//        colorfulCardViewController.emailString = emailString
-//        colorfulCardViewController.websiteString = websiteString
     }
-    
-//    func pushStrings(to viewController: UIViewController, with identifier: String) {
-//        let vc = storyboard?.instantiateViewController(withIdentifier: identifier) as!viewController
-//        vc.nameString = nameString
-//        vc.titleString = titleString
-//        vc.phoneString = phoneString
-//        vc.emailString = emailString
-//        vc.websiteString = websiteString
-//        navigationController?.pushViewController(vc, animated: true)
-//    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
